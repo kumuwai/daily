@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace Kumuwai\Daily\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

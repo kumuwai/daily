@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace Kumuwai\Daily\Events;
 
 abstract class Event {
 

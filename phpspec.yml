@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: Kumuwai\Daily
+        psr4_prefix: Kumuwai\Daily
         src_path: app
