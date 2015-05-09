@@ -11,11 +11,15 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', function(){
+    return view('day001::day001');        
+});
 
-Route::get('home', 'HomeController@index');
+// '\Kumuwai\Daily\Modules\Day001\Http\Controllers\Day001Controller@index');
 
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);
+// Route::get('home', 'HomeController@index');
+
+// Route::controllers([
+//     'auth' => 'Auth\AuthController',
+//     'password' => 'Auth\PasswordController',
+// ]);

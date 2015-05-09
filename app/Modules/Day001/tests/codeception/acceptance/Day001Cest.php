@@ -1,7 +1,7 @@
-<?php
+<?php namespace Kumuwai\Daily\Modules\Day001\tests\codeception\acceptance;
 use \AcceptanceTester;
 
-class WelcomeCest
+class Day001Cest
 {
     public function _before(AcceptanceTester $I)
     {
@@ -11,12 +11,14 @@ class WelcomeCest
     {
     }
 
-    // tests
     public function tryToTest(AcceptanceTester $I)
     {
         $I->wantTo('make sure the index page works');
         $I->amOnPage('/');
-        $I->see('Welcome');
+        $I->dontSee('failed to open stream: Permission denied');
+        $I->dontSee('Whoops');
+        $I->seeResponseCodeIs(200);
+        $I->see('Aloha', 'h1');
     }
 
 }

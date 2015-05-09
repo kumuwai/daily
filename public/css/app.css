@@ -6231,3 +6231,88 @@ label,
 .checkbox label {
   font-weight: 300;
 }
+/* Main page styles ---------------*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #cfc;
+  background: url(/img/background.jpg) fixed;
+  padding-bottom: 300px;
+}
+.container {
+  padding: 40px 40px;
+  margin: 0px 100px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #030;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 3px 3px 10px #999;
+  width: auto;
+}
+dt,
+dd {
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+}
+dt {
+  width: 60px;
+  clear: both;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 95%;
+}
+dd {
+  margin-left: 10px;
+}
+dl {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  height: auto;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+h1 a {
+  color: black;
+}
+p {
+  font-size: 12pt;
+  line-height: 180%;
+}
+.note {
+  font-style: italic;
+}
+.error {
+  color: red;
+  font-style: italic;
+}
+form ul {
+  margin-left: 0;
+  list-style: none;
+}
+.bordered {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=app.css.map */
