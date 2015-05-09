@@ -6,5 +6,10 @@ namespace Codeception\Module;
 
 class AcceptanceHelper extends \Codeception\Module
 {
+    public function seeImageWithSource($image_url)
+    {
+        $phpBrowser = $this->getModule('PhpBrowser');
+        $phpBrowser->seeElement('//img[@src="'.$image_url.'"]');
+    }
 
 }

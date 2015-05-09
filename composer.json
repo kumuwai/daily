@@ -8,13 +8,21 @@
 		"laravel/framework": "5.0.*",
 		"caffeinated/modules": "~1.2",
 		"wikimedia/composer-merge-plugin": "~1.0",
-		"codeception/codeception": "~2.0",
-		"codeception/phpbuiltinserver": "~1.2"
+	    "kumuwai/data-transfer-object": "~0.0.4"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
-		"phpspec/phpspec": "~2.1"
+		"phpspec/phpspec": "~2.1",
+		"codeception/codeception": "~2.0",
+		"codeception/phpbuiltinserver": "~1.2",
+	    "kumuwai/mock-object": "dev-master"
 	},
+	"repositories": [
+	    {
+	        "type": "vcs",
+	        "url":  "https://github.com/kumuwai/mock-object.git"
+	    }
+	],
 	"autoload": {
 		"classmap": [
 			"database"
@@ -25,7 +33,7 @@
 	},
 	"autoload-dev": {
 		"classmap": [ 
-			"tests/TestCase.php"
+			"tests/TestCases"
 		]
 	},
 	"scripts": {

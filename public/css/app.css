@@ -6333,6 +6333,11 @@ form ul {
   text-align: center;
   padding-top: 6px;
 }
+.menu-item figure {
+  display: inline-block;
+  max-height: 16px;
+  padding-right: 6px;
+}
 body,
 label,
 .checkbox label {

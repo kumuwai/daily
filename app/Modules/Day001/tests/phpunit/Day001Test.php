@@ -19,11 +19,7 @@ class Day001Test extends TestCase
     {
         $response = $this->call('GET', '/day001');
 
-
         $this->assertEquals(200, $response->getStatusCode());
     }
-
-
-
 
 }

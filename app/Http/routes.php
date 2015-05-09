@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function(){
-    return view('day001::day001');        
-});
+Route::get('/', '\Kumuwai\Daily\Modules\Day001\Http\Controllers\Day001Controller@index');
 
-// '\Kumuwai\Daily\Modules\Day001\Http\Controllers\Day001Controller@index');
 
 // Route::get('home', 'HomeController@index');
 
