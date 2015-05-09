@@ -1,0 +1,37 @@
+@import "colors";
+@import "borders";
+
+/* Main page styles ---------------*/
+
+body {
+    background-color: @light-green;
+    background: url(/img/background.jpg) fixed;
+    padding-bottom: 300px;
+    .no-margin;
+}
+
+p {
+    font-size: 12pt;
+    line-height: 180%;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    font-style: italic;
+}
+.error { color: @error; font-style: italic; }
+
+.wrapper {
+    padding: 40px 40px;
+    margin: 0px 100px;
+    background-color: @blue-glass;
+    width: auto;
+    .rounded-bottom;
+}
+
