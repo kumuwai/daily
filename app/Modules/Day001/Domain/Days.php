@@ -2,6 +2,7 @@
 
 use Caffeinated\Modules\Modules;
 use Kumuwai\DataTransferObject\DTO;
+use Illuminate\Support\Collection;
 
 
 class Days
@@ -32,7 +33,7 @@ class Days
             $results[] = $this->getModuleInformation($module);
         }
 
-        return new DTO($results);
+        return new Collection($results);
     }
 
     /**
@@ -43,13 +44,13 @@ class Days
      */
     private function getModuleInformation($module)
     {
-        return [
+        return new DTO([
             'name'        => $module['name'],
             'slug'        => $module['slug'],
             'description' => $module['description'],
             'status'      => ($module['enabled']) ? 'Enabled' : 'Disabled',
             'tools'       => isset($module['tools']) ? $this->tools->mini($module['tools']) : '',
-        ];
+        ]);
     }
 
 }
