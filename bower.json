@@ -1,0 +1,16 @@
+{
+  "name": "kumuwai/daily",
+  "authors": [
+    "Joel <joel@kumuwai.com>"
+  ],
+  "description": "Daily Practice Playground",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "*",
+    "angular-resource": "*",
+    "angular-route": "*"
+  }
+}

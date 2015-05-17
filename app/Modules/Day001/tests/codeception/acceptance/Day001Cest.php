@@ -1,5 +1,6 @@
 <?php namespace Kumuwai\Daily\Modules\Day001\tests\codeception\acceptance;
-use \AcceptanceTester;
+
+use AcceptanceTester;
 
 class Day001Cest
 {

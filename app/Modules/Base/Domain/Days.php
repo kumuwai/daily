@@ -1,7 +1,7 @@
-<?php namespace Kumuwai\Daily\Modules\Day001\Domain;
+<?php namespace Kumuwai\Daily\Modules\Base\Domain;
 
 use Caffeinated\Modules\Modules;
-use Kumuwai\DataTransferObject\DTO;
+use Kumuwai\DataTransferObject\Laravel5DTO as DTO;
 use Illuminate\Support\Collection;
 
 
@@ -16,15 +16,18 @@ class Days
         $this->tools = $tools;
     }
 
-    public function get()
+    public function get($day = Null)
     {
-        return $this->getDays();
+        if ( ! $day )
+            return $this->getDays();
+
+        return $this->getDay($day);
     }
 
     private function getDays()
     {
-        $modules = array_filter($this->modules->all()->toArray(), function($module){
-            return strpos($module['name'], 'Day') === 0
+        $modules = $this->modules->all()->filter(function($module) {
+            return strpos($module['slug'], 'day') === 0
                 && $module['enabled'];
         });
 
@@ -34,6 +37,18 @@ class Days
         }
 
         return new Collection($results);
+    }
+
+    private function getDay($day)
+    {
+        $modules = $this->modules->all()->filter(function($module) use ($day) {
+            return $module['slug'] == $day;
+        });
+
+        if ( ! $modules->count())
+            return new DTO([]);
+
+        return $this->getModuleInformation($modules->first());
     }
 
     /**
@@ -50,7 +65,18 @@ class Days
             'description' => $module['description'],
             'status'      => ($module['enabled']) ? 'Enabled' : 'Disabled',
             'tools'       => isset($module['tools']) ? $this->tools->mini($module['tools']) : '',
+            'title'       => $this->getTitle($module['slug']),
         ]);
+    }
+
+    private function getTitle($slug)
+    {
+        $day = substr($slug, 3) + 0;
+
+        if (is_numeric($day))
+            return "Day $day";
+
+        return $slug;
     }
 
 }

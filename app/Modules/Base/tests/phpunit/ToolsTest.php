@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Modules\Day001\Domain;
+<?php namespace Kumuwai\Daily\Modules\Base\Domain;
 
 use PHPUnit_Framework_TestCase;
 
@@ -44,9 +44,9 @@ class ToolsTest extends PHPUnit_Framework_TestCase
     {
         return array(
             [['na'],''],
-            [['laravel'],'<day001::image.Laravel 5>'],
-            [['laravel','na'],'<day001::image.Laravel 5>'],
-            [[],'<day001::image.Laravel 5><day001::image.tool1>'],
+            [['laravel'],'<base::image.Laravel 5>'],
+            [['laravel','na'],'<base::image.Laravel 5>'],
+            [[],'<base::image.Laravel 5><base::image.tool1>'],
         );
     }
 
@@ -54,14 +54,14 @@ class ToolsTest extends PHPUnit_Framework_TestCase
     {
         $test = new Tools;
         $result = $test->all();
-        $this->assertSame('<day001::image.Laravel 5><day001::image.tool1>', $result);
+        $this->assertSame('<base::image.Laravel 5><base::image.tool1>', $result);
     }
 
     public function testCanGetMiniRenderedTools()
     {
         $test = new Tools;
         $result = $test->mini(['laravel']);
-        $this->assertSame('<day001::mini.Laravel 5>', $result);
+        $this->assertSame('<base::mini.Laravel 5>', $result);
     }
 
 }

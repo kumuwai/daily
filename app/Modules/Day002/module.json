@@ -1,0 +1,8 @@
+{
+	"name": "Day002",
+	"slug": "day002",
+	"version": "1.0",
+	"description": "Basic application structure",
+	"enabled": true,
+    "tools": ["laravel"]
+}

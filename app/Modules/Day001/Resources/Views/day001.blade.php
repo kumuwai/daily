@@ -16,6 +16,12 @@
             display: table-cell;
             padding-right: 10px;
         }
+        #main-menu .description img {
+            max-height: 16px;
+        }
+        #tools img {
+            max-height: 40px;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +30,7 @@
 
     <p>I'm Joel, and this is a playground for me to spend a little time to experiment with web tools and techniques (both client and server side). I'd generally like to keep these as simple projects--maybe spend an hour or two on each. As of right now, I plan to be playing with:</p>
 
-    <div class="inline-image">
+    <div id="tools" class="inline-image">
         {!! $tools !!}
     </div>
 

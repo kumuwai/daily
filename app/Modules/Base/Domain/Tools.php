@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Modules\Day001\Domain;
+<?php namespace Kumuwai\Daily\Modules\Base\Domain;
 
 
 class Tools
@@ -18,12 +18,12 @@ class Tools
 
     public function render(array $tools = [])
     {
-        return $this->renderView('day001::image', $this->get($tools));
+        return $this->renderView('base::image', $this->get($tools));
     }
 
     public function mini(array $tools)
     {
-        return $this->renderView('day001::mini', $this->get($tools));
+        return $this->renderView('base::mini', $this->get($tools));
     }
 
     private function renderView($view, $items)

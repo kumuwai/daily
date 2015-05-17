@@ -3,8 +3,8 @@
 use Kumuwai\Daily\Http\Requests;
 use Kumuwai\Daily\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Kumuwai\Daily\Modules\Day001\Domain\Tools;
-use Kumuwai\Daily\Modules\Day001\Domain\Days;
+use Kumuwai\Daily\Modules\Base\Domain\Tools;
+use Kumuwai\Daily\Modules\Base\Domain\Days;
 
 class Day001Controller extends Controller 
 {

@@ -4105,7 +4105,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  border-color: black;
 }
 .navbar-default .navbar-brand {
   color: #777777;
@@ -4150,7 +4150,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: black;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -6324,6 +6324,13 @@ h5 a {
 form ul {
   margin-left: 0;
   list-style: none;
+}
+#page-title figure {
+  display: inline-block;
+  padding-left: 10px;
+}
+#page-title img {
+  max-height: 24px;
 }
 .inline-image figure {
   display: inline-block;

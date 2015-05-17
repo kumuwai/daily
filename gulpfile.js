@@ -14,3 +14,15 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.less('app.less');
 });
+
+elixir(function(mix) {
+    mix
+    .scripts([
+        '/../bower/angular/angular.js',
+        '/../bower/angular-resource/angular-resource.js',
+        '/../bower/angular-route/angular-route.js',
+    ], 'public/js/angular.js');
+    // .scripts(['forum.js', 'threads.js'], 'public/js/forum.js');
+});
+
+
