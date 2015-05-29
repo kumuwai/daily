@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'Kumuwai\Daily\Http\Kernel'
+	'Kumuwai\Playground\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'Kumuwai\Daily\Console\Kernel'
+	'Kumuwai\Playground\Console\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
-	'Kumuwai\Daily\Exceptions\Handler'
+	'Kumuwai\Playground\Exceptions\Handler'
 );
 
 /*

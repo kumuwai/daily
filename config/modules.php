@@ -26,6 +26,6 @@ return [
     |
     */  
 
-    'namespace' => 'Kumuwai\Daily\Modules\\',
+    'namespace' => 'Kumuwai\Playground\Modules\\',
     
 ];

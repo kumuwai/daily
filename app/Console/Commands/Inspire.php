@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Console\Commands;
+<?php namespace Kumuwai\Playground\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

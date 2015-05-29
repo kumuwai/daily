@@ -1,6 +1,6 @@
-<?php namespace Kumuwai\Daily\Services;
+<?php namespace Kumuwai\Playground\Services;
 
-use Kumuwai\Daily\User;
+use Kumuwai\Playground\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

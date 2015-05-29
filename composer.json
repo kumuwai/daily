@@ -1,7 +1,7 @@
 {
-	"name": "kumuwai/daily",
-	"description": "Daily programming and development practice",
-	"keywords": ["laravel", "daily", "practice"],
+	"name": "kumuwai/playground",
+	"description": "Playground for learning and exploring web development tools and techniques",
+	"keywords": ["web", "practice", "playground", "laravel"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
@@ -29,7 +29,7 @@
 			"database"
 		],
 		"psr-4": {
-			"Kumuwai\\Daily\\": "app/"
+			"Kumuwai\\Playground\\": "app/"
 		}
 	},
 	"autoload-dev": {

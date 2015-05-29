@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Providers;
+<?php namespace Kumuwai\Playground\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
     {
         $this->app->bind(
             'Illuminate\Contracts\Auth\Registrar',
-            'Kumuwai\Daily\Services\Registrar'
+            'Kumuwai\Playground\Services\Registrar'
         );
     }
 

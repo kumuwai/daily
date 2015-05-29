@@ -141,11 +141,11 @@ return [
         'Caffeinated\Modules\ModulesServiceProvider',
 
         // Application Service Providers         
-        'Kumuwai\Daily\Providers\AppServiceProvider',
-        'Kumuwai\Daily\Providers\BusServiceProvider',
-        'Kumuwai\Daily\Providers\ConfigServiceProvider',
-        'Kumuwai\Daily\Providers\EventServiceProvider',
-        'Kumuwai\Daily\Providers\RouteServiceProvider',
+        'Kumuwai\Playground\Providers\AppServiceProvider',
+        'Kumuwai\Playground\Providers\BusServiceProvider',
+        'Kumuwai\Playground\Providers\ConfigServiceProvider',
+        'Kumuwai\Playground\Providers\EventServiceProvider',
+        'Kumuwai\Playground\Providers\RouteServiceProvider',
 
     ],
 

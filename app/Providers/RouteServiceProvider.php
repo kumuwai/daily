@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Providers;
+<?php namespace Kumuwai\Playground\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider {
      *
      * @var string
      */
-    protected $namespace = 'Kumuwai\Daily\Http\Controllers';
+    protected $namespace = 'Kumuwai\Playground\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

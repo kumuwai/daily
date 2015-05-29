@@ -1,5 +1,5 @@
 <?php
-namespace Kumuwai\Playground\Modules\Base\Providers;
+namespace Kumuwai\Playground\Modules\Project001\Providers;
 
 use Caffeinated\Modules\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
@@ -13,7 +13,7 @@ class RouteServiceProvider extends ServiceProvider
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'Kumuwai\Playground\Modules\Base\Http\Controllers';
+	protected $namespace = 'Kumuwai\Playground\Modules\Project001\Http\Controllers';
 
 	/**
 	 * Define your module's route model bindings, pattern filters, etc.
@@ -38,7 +38,7 @@ class RouteServiceProvider extends ServiceProvider
 	{
 		$router->group(['namespace' => $this->namespace], function($router)
 		{
-			require (config('modules.path').'/Base/Http/routes.php');
+			require (config('modules.path').'/Project001/Http/routes.php');
 		});
 	}
 }

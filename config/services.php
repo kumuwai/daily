@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => 'Kumuwai\Daily\User',
+        'model'  => 'Kumuwai\Playground\User',
         'key' => '',
         'secret' => '',
     ],

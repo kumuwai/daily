@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Console;
+<?php namespace Kumuwai\Playground\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel {
      * @var array
      */
     protected $commands = [
-        'Kumuwai\Daily\Console\Commands\Inspire',
+        'Kumuwai\Playground\Console\Commands\Inspire',
     ];
 
     /**

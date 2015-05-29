@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Commands;
+<?php namespace Kumuwai\Playground\Commands;
 
 abstract class Command {
 

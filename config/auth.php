@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => 'Kumuwai\Daily\User',
+    'model' => 'Kumuwai\Playground\User',
 
     /*
     |--------------------------------------------------------------------------

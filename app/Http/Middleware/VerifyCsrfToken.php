@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Http\Middleware;
+<?php namespace Kumuwai\Playground\Http\Middleware;
 
 use Closure;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;

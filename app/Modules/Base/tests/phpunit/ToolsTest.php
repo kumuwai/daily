@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Modules\Base\Domain;
+<?php namespace Kumuwai\Playground\Modules\Base\Domain;
 
 use PHPUnit_Framework_TestCase;
 

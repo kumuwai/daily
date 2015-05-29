@@ -1,22 +1,22 @@
-<?php namespace Kumuwai\Daily\Http\Controllers;
+<?php namespace Kumuwai\Playground\Http\Controllers;
 
-use Kumuwai\Daily\Http\Requests;
-use Kumuwai\Daily\Http\Controllers\Controller;
+use Kumuwai\Playground\Http\Requests;
+use Kumuwai\Playground\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
 
 class UIController extends Controller 
 {
-	protected $day = 'base';
+	protected $project = 'base';
 
 	public function __construct()
 	{
-		$days = app()->make('days.base');
-		$day = $days->get($this->day);
+		$projects = app()->make('projects.base');
+		$project = $projects->get($this->project);
 
-		view()->composer('layouts.main', function($view) use($day){
-			$view->with(compact('day'));
+		view()->composer('layouts.main', function($view) use($project){
+			$view->with(compact('project'));
 		});
 	}
 
@@ -27,7 +27,7 @@ class UIController extends Controller
 	 */
 	public function index()
 	{
-		return view($this->day . '::index');
+		return view($this->project . '::index');
 	}
 
 	/**
@@ -37,7 +37,7 @@ class UIController extends Controller
 	 */
 	public function create()
 	{
-		return view($this->day . '::create');
+		return view($this->project . '::create');
 	}
 
 }

@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Modules\Base\Providers;
+<?php namespace Kumuwai\Playground\Modules\Base\Providers;
 
 use App;
 use Config;
@@ -6,8 +6,8 @@ use Lang;
 use View;
 use Illuminate\Support\ServiceProvider;
 
-use Kumuwai\Daily\Modules\Base\Domain\Days;
-use Kumuwai\Daily\Modules\Base\Domain\Tools;
+use Kumuwai\Playground\Modules\Base\Domain\Projects;
+use Kumuwai\Playground\Modules\Base\Domain\Tools;
 
 
 class BaseServiceProvider extends ServiceProvider
@@ -22,10 +22,10 @@ class BaseServiceProvider extends ServiceProvider
 		// This service provider is a convenient place to register your modules
 		// services in the IoC container. If you wish, you may make additional
 		// methods or service providers to keep the code more focused and granular.
-		App::register('Kumuwai\Daily\Modules\Base\Providers\RouteServiceProvider');
+		App::register('Kumuwai\Playground\Modules\Base\Providers\RouteServiceProvider');
 
-		$this->app->bind('days.base', function($app){
-			return new Days($app['modules'], new Tools);
+		$this->app->bind('projects.base', function($app){
+			return new Projects($app['modules'], new Tools);
 		});
 
 		$this->registerNamespaces();

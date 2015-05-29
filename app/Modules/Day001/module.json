@@ -1,8 +1,0 @@
-{
-	"name": "Day001",
-	"slug": "day001",
-	"version": "1.0",
-	"description": "Initial setup and configuration",
-    "tools": ["laravel","codeception","phpunit","gulp","less"],
-	"enabled": true
-}

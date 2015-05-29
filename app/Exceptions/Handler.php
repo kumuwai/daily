@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Exceptions;
+<?php namespace Kumuwai\Playground\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

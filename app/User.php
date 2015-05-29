@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily;
+<?php namespace Kumuwai\Playground;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

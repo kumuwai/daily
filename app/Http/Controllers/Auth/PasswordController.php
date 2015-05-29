@@ -1,6 +1,6 @@
-<?php namespace Kumuwai\Daily\Http\Controllers\Auth;
+<?php namespace Kumuwai\Playground\Http\Controllers\Auth;
 
-use Kumuwai\Daily\Http\Controllers\Controller;
+use Kumuwai\Playground\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;

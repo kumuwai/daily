@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Providers;
+<?php namespace Kumuwai\Playground\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
         $dispatcher->mapUsing(function($command)
         {
             return Dispatcher::simpleMapping(
-                $command, 'Kumuwai\Daily\Commands', 'Kumuwai\Daily\Handlers\Commands'
+                $command, 'Kumuwai\Playground\Commands', 'Kumuwai\Playground\Handlers\Commands'
             );
         });
     }

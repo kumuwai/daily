@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Http\Controllers;
+<?php namespace Kumuwai\Playground\Http\Controllers;
 
 class WelcomeController extends Controller {
 

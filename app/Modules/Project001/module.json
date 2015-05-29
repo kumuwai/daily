@@ -1,0 +1,8 @@
+{
+	"name": "Project001",
+	"slug": "project001",
+	"version": "1.0",
+	"description": "Initial setup and configuration",
+    "tools": ["laravel","codeception","phpunit","gulp","less"],
+	"enabled": true
+}

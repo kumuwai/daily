@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Http\Requests;
+<?php namespace Kumuwai\Playground\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

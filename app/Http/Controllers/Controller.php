@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Http\Controllers;
+<?php namespace Kumuwai\Playground\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Routing\Controller as BaseController;

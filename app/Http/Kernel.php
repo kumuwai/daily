@@ -1,4 +1,4 @@
-<?php namespace Kumuwai\Daily\Http;
+<?php namespace Kumuwai\Playground\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends HttpKernel {
         'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
         'Illuminate\Session\Middleware\StartSession',
         'Illuminate\View\Middleware\ShareErrorsFromSession',
-        'Kumuwai\Daily\Http\Middleware\VerifyCsrfToken',
+        'Kumuwai\Playground\Http\Middleware\VerifyCsrfToken',
     ];
 
     /**
@@ -24,9 +24,9 @@ class Kernel extends HttpKernel {
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => 'Kumuwai\Daily\Http\Middleware\Authenticate',
+        'auth' => 'Kumuwai\Playground\Http\Middleware\Authenticate',
         'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-        'guest' => 'Kumuwai\Daily\Http\Middleware\RedirectIfAuthenticated',
+        'guest' => 'Kumuwai\Playground\Http\Middleware\RedirectIfAuthenticated',
     ];
 
 }

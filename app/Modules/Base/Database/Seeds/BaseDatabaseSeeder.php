@@ -1,5 +1,5 @@
 <?php
-namespace Kumuwai\Daily\Modules\Base\Database\Seeds;
+namespace Kumuwai\Playground\Modules\Base\Database\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +15,7 @@ class BaseDatabaseSeeder extends Seeder
 	{
 		Model::unguard();
 
-		// $this->call('Kumuwai\Daily\Modules\Base\Database\Seeds\FoobarTableSeeder');
+		// $this->call('Kumuwai\Playground\Modules\Base\Database\Seeds\FoobarTableSeeder');
 	}
 
 }

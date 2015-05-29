@@ -22,11 +22,11 @@
 
 <div class="wrapper" style="padding-top: 50px;">
 
-    <h1 id="page-title"><a href="/{{$day->slug}}/">{{$day->title}}</a> {!! $day->tools !!}</h1>
+    <h1 id="page-title"><a href="/{{$project->slug}}/">{{$project->title}}</a> {!! $project->tools !!}</h1>
 
     @yield('notes')
 
-    <p><a href="https://github.com/kumuwai/daily/app/Modules/{{$day->name}}">Source code</a> for this project is available on github.</p>
+    <p><a href="https://github.com/kumuwai/daily/tree/master/app/Modules/{{$project->name}}">Source code</a> for this project is available on github.</p>
 
     @yield('content')
 </div>

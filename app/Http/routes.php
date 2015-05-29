@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', '\Kumuwai\Daily\Modules\Day001\Http\Controllers\Day001Controller@index');
+Route::get('/', '\Kumuwai\Playground\Modules\Project001\Http\Controllers\Project001Controller@index');
 
 
 // Route::get('home', 'HomeController@index');
