@@ -12,4 +12,9 @@ class AcceptanceHelper extends \Codeception\Module
         $phpBrowser->seeElement('//img[@src="'.$image_url.'"]');
     }
 
+    public function seeRegularExpression($pattern, $value)
+    {
+        \PHPUnit_Framework_Assert::assertRegExp($pattern, $value);
+    }
+
 }

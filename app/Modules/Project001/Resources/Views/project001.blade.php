@@ -45,7 +45,7 @@
     <div id="main-menu">
         @foreach($projects as $project)
             <div class="menu-item">
-                <div class="name"><a href="/{{$project->slug}}">{{$project->name}}</a></div> 
+                <div class="name"><a href="/{{$project->slug}}">{{$project->title}}</a></div> 
                 <div class="description">{{$project->description}} {!! $project->tools !!}</div>
             </div>
         @endforeach

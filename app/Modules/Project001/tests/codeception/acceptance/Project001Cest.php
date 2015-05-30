@@ -1,17 +1,7 @@
-<?php namespace Kumuwai\Playground\Modules\Project001\tests\codeception\acceptance;
-
-use AcceptanceTester;
+<?php
 
 class Project001Cest
 {
-    public function _before(AcceptanceTester $I)
-    {
-    }
-
-    public function _after(AcceptanceTester $I)
-    {
-    }
-
     public function make_sure_index_page_works(AcceptanceTester $I)
     {
         $I->amOnPage('/');
@@ -33,7 +23,15 @@ class Project001Cest
     public function make_sure_index_page_has_list_of_projects(AcceptanceTester $I)
     {
         $I->amOnPage('/');
-        $I->seeLink('Project001');
+        $I->seeLink('Project 1','project001');
+    }
+
+    public function make_sure_project1_page_works(AcceptanceTester $I)
+    {
+        $I->amOnPage('/project001');
+        $I->seeResponseCodeIs(200);
+        $I->see('Aloha', 'h1');
+        $I->seeLink('Project 1','project001');
     }
 
 }
