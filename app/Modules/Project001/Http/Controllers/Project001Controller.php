@@ -37,15 +37,15 @@ class Project001Controller extends Controller
     /**
      * Return a view showing an index of projects and tools used
      */
-	public function index()
-	{
+    public function index()
+    {
         $projects = $this->projects->get()
             ->sortBy(function($project){
                 return $project->name;
             }, SORT_REGULAR, true);
         $tools = $this->tools->all();
 
-		return view('project001::project001', compact('projects','tools'));
-	}
+        return view('project001::project001', compact('projects','tools'));
+    }
 
 }

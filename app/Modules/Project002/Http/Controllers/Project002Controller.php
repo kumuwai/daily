@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 
 class Project002Controller extends UIController 
 {
-	protected $project = 'project002';
+    protected $project = 'project002';
 
-	public function index()
-	{
-		$projects = app()->make('projects.base')->get();
-		return view('project002::index')
-			->with(compact('projects'));
-	}
+    public function index()
+    {
+        $projects = app()->make('projects.base')->get();
+        return view('project002::index')
+            ->with(compact('projects'));
+    }
 
 }

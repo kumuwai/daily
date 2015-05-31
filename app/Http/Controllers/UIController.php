@@ -8,40 +8,40 @@ use Illuminate\Http\Request;
 
 class UIController extends Controller 
 {
-	protected $project = 'base';
+    protected $project = 'base';
 
-	public function __construct()
-	{
-		$projects = app()->make('projects.base');
-		$project = $projects->get($this->project);
+    public function __construct()
+    {
+        $projects = app()->make('projects.base');
+        $project = $projects->get($this->project);
 
-		view()->composer('layouts.main', function($view) use($project){
-			$view->with(compact('project'));
-		});
+        view()->composer('layouts.main', function($view) use($project){
+            $view->with(compact('project'));
+        });
 
-		view()->composer('base::navbar', function($view) use($projects){
-			$view->with('projects', $projects->get());
-		});
-	}
+        view()->composer('base::navbar', function($view) use($projects){
+            $view->with('projects', $projects->get());
+        });
+    }
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		return view($this->project . '::index');
-	}
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function index()
+    {
+        return view($this->project . '::index');
+    }
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		return view($this->project . '::create');
-	}
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function create()
+    {
+        return view($this->project . '::create');
+    }
 
 }
