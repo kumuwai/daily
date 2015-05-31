@@ -1,6 +1,7 @@
 <?php namespace Kumuwai\Playground\Http\Controllers;
 
-class WelcomeController extends Controller {
+class WelcomeController extends Controller 
+{
 
     /*
     |--------------------------------------------------------------------------
@@ -15,8 +16,6 @@ class WelcomeController extends Controller {
 
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {

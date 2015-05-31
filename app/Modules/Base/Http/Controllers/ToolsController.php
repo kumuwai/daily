@@ -17,6 +17,9 @@ class ToolsController extends UIController
         $this->projects = $projects;
     }
 
+    /**
+     * Return a view showing a list of projects that use a given tool
+     */
     public function show($id)
     {
         $tool = $this->tools->get([$id]);

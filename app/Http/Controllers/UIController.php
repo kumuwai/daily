@@ -1,15 +1,15 @@
 <?php namespace Kumuwai\Playground\Http\Controllers;
 
-use Kumuwai\Playground\Http\Requests;
 use Kumuwai\Playground\Http\Controllers\Controller;
-
-use Illuminate\Http\Request;
 
 
 class UIController extends Controller 
 {
     protected $project = 'base';
 
+    /**
+     * Create a new controller instance.
+     */
     public function __construct()
     {
         $projects = app()->make('projects.base');
