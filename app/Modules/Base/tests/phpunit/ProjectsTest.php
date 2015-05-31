@@ -74,5 +74,25 @@ class ProjectsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('y', $result->description);
         $this->assertEquals('Project 2', $result->title);
     }
+
+    public function testCanGetListOfProjectsUsingGivenTool()
+    {
+        $modules = MockObject::mock(self::MODULES_CLASS, [
+            'all' => new Collection ([
+                ['name'=>'Project1','slug'=>'project1','enabled'=>true,'description'=>'x','tools'=>['a']],
+                ['name'=>'Project2','slug'=>'project2','enabled'=>true,'description'=>'y','tools'=>['b']],
+                ['name'=>'Project3','slug'=>'project3','enabled'=>true,'description'=>'z','tools'=>['a','b']],
+            ])
+        ]);
+        $tools = MockObject::mock(self::TOOLS_CLASS, ['mini'=>'x']);
+        $test = new Projects($modules, $tools);
+
+        $this->assertCount(0, $test->getProjectsWithTool('x'));
+
+        $result = $test->getProjectsWithTool('a');
+        $this->assertCount(2, $result);
+        $this->assertEquals('Project 1', $result[0]->title);
+        $this->assertEquals('Project 3', $result[1]->title);
+    }
 }
 

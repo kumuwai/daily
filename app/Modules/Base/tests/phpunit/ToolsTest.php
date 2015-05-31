@@ -44,9 +44,9 @@ class ToolsTest extends PHPUnit_Framework_TestCase
     {
         return array(
             [['na'],''],
-            [['laravel'],'<base::figure.Laravel 5>'],
-            [['laravel','na'],'<base::figure.Laravel 5>'],
-            [[],'<base::figure.Laravel 5><base::figure.tool1>'],
+            [['laravel'],'<base::tool.Laravel 5>'],
+            [['laravel','na'],'<base::tool.Laravel 5>'],
+            [[],'<base::tool.Laravel 5><base::tool.tool1>'],
         );
     }
 
@@ -54,14 +54,14 @@ class ToolsTest extends PHPUnit_Framework_TestCase
     {
         $test = new Tools;
         $result = $test->all();
-        $this->assertSame('<base::figure.Laravel 5><base::figure.tool1>', $result);
+        $this->assertSame('<base::tool.Laravel 5><base::tool.tool1>', $result);
     }
 
     public function testCanGetMiniRenderedTools()
     {
         $test = new Tools;
         $result = $test->mini(['laravel']);
-        $this->assertSame('<base::mini-figure.Laravel 5>', $result);
+        $this->assertSame('<base::mini-tool.Laravel 5>', $result);
     }
 
 }

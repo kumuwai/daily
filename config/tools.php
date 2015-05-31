@@ -7,7 +7,7 @@ return [
     'codeception' => ['caption'=>'codeception', 'url'=>'https://codeception.com', 'file'=>'logo_codeception.png'],
     'gulp' => ['caption'=>'gulp', 'url'=>'http://gulpjs.com', 'file'=>'logo_gulp.png'],
     'less' => ['caption'=>'less', 'url'=>'http://lesscss.org', 'file'=>'logo_less.png'],
-    'bootstrap' => ['caption'=>'bootstrap', 'url'=>'http://getbootstrap.com', 'file'=>'logo_bootstrap.svg'],
+    'bootstrap' => ['caption'=>'Bootstrap', 'url'=>'http://getbootstrap.com', 'file'=>'logo_bootstrap.svg'],
     'bower' => ['caption'=>'bower', 'url'=>'http://bower.io', 'file'=>'logo_bower.png'],
     
     // 'jquery' => ['caption'=>'jquery', 'url'=>'http://jquery.com', 'file'=>'logo_jquery.svg'],

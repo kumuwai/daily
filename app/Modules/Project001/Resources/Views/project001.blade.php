@@ -5,20 +5,6 @@
     <title>Playground</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <style type="text/css">
-        #main-menu {
-            display:table;
-        }
-        #main-menu .menu-item {
-            display: table-row;
-        }
-        #main-menu .name,
-        #main-menu .description {
-            display: table-cell;
-            padding-right: 10px;
-        }
-        #main-menu .description img {
-            max-height: 16px;
-        }
         #tools img {
             max-height: 40px;
         }
@@ -38,7 +24,7 @@
 
     @include('base::shields')
 
-    <div id="main-menu">
+    <div id="project-menu">
         @foreach($projects as $project)
             <div class="menu-item">
                 <div class="name"><a href="/{{$project->slug}}">{{$project->title}}</a></div> 

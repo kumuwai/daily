@@ -6276,6 +6276,20 @@ a:hover {
   border-radius: 0 0 10px 10px;
   box-shadow: 3px 3px 10px #999999;
 }
+#project-menu {
+  display: table;
+}
+#project-menu .menu-item {
+  display: table-row;
+}
+#project-menu .name,
+#project-menu .description {
+  display: table-cell;
+  padding-right: 10px;
+}
+#project-menu .description img {
+  max-height: 16px;
+}
 .header {
   font-family: verdana, arial, helvetica, sans-serif;
   height: auto;
@@ -6344,6 +6358,9 @@ form ul {
   display: inline-block;
   max-height: 16px;
   padding-right: 6px;
+}
+.menu-item figure img {
+  max-height: 16px;
 }
 body,
 label,
