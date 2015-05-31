@@ -39,7 +39,10 @@ class Project001Controller extends Controller
      */
 	public function index()
 	{
-        $projects = $this->projects->get();
+        $projects = $this->projects->get()
+            ->sortBy(function($project){
+                return $project->name;
+            }, SORT_REGULAR, true);
         $tools = $this->tools->all();
 
 		return view('project001::project001', compact('projects','tools'));

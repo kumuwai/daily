@@ -11,6 +11,8 @@
 |
 */
 
-Route::group(['prefix' => 'project001'], function() {
-    Route::get('/', 'Project001Controller@index');
+Route::group(['prefix' => 'project002'], function() {
+    Route::resource('/', 'Project002Controller', [
+        'only'=>['index']
+    ]);
 });

@@ -18,18 +18,19 @@ class Tools
 
     public function render(array $tools = [])
     {
-        return $this->renderView('base::image', $this->get($tools));
+        return $this->renderView('base::tool', $this->get($tools));
     }
 
     public function mini(array $tools)
     {
-        return $this->renderView('base::mini', $this->get($tools));
+        return $this->renderView('base::mini-tool', $this->get($tools));
     }
 
     private function renderView($view, $items)
     {
         $result = '';
-        foreach($items as $item) {
+        foreach($items as $key=>$item) {
+            $item['key'] = $key;
             $result .= view($view, $item)->render();
         }
         return $result;

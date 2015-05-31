@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+var bower_source = 'resources/assets/bower/';
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -21,7 +23,10 @@ elixir(function(mix) {
         '/../bower/angular/angular.js',
         '/../bower/angular-resource/angular-resource.js',
         '/../bower/angular-route/angular-route.js',
-    ], 'public/js/angular.js');
+    ], 'public/js/angular.js')
+    .copy(bower_source + 'jquery/dist/*.*', 'public/js')
+    .copy(bower_source + '/bootstrap/dist/js/*.*', 'public/js')
+    ;
     // .scripts(['forum.js', 'threads.js'], 'public/js/forum.js');
 });
 

@@ -1,0 +1,8 @@
+{
+	"name": "Project002",
+	"slug": "project002",
+	"version": "1.0",
+	"description": "Bootstrap Menus",
+    "tools": ["bootstrap","bower"],
+	"enabled": true
+}
