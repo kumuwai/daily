@@ -18,6 +18,10 @@ class UIController extends Controller
 		view()->composer('layouts.main', function($view) use($project){
 			$view->with(compact('project'));
 		});
+
+		view()->composer('base::navbar', function($view) use($projects){
+			$view->with('projects', $projects->get());
+		});
 	}
 
 	/**

@@ -11,6 +11,7 @@
   "dependencies": {
     "angular": "*",
     "angular-resource": "*",
-    "angular-route": "*"
+    "angular-route": "*",
+    "bootstrap": "~3.3.4"
   }
 }
