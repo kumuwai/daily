@@ -18,8 +18,10 @@
 
 <div class="wrapper" style="padding-top: 50px;">
 
-    <h1 id="page-title"><a href="/{{$project->slug}}/">{{$project->title}} - {{$project->description}}</a> {!! $project->tools !!}</h1>
-
+    @section('page-title')
+        <h1 id="page-title"><a href="/{{$project->slug}}/">{{$project->title}} - {{$project->description}}</a> {!! $project->tools !!}</h1>
+    @show
+    
     @yield('notes')
 
     @include('base::shields')

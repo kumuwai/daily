@@ -24,13 +24,34 @@ class Projects
         return $this->getProject($project);
     }
 
+    public function getProjectsWithTool($tool)
+    {
+        $modules = $this->modules->all()->filter(function($module) use ($tool)  {
+            return $this->isActiveProject($module)
+                && isset($module['tools'])
+                && in_array($tool, $module['tools']);
+        });
+
+        return $this->packageModuleInformation($modules);
+    }
+
     private function getProjects()
     {
         $modules = $this->modules->all()->filter(function($module) {
-            return strpos($module['slug'], 'project') === 0
-                && $module['enabled'];
+            return $this->isActiveProject($module);
         });
 
+        return $this->packageModuleInformation($modules);
+    }
+
+    private function isActiveProject($module)
+    {
+        return strpos($module['slug'], 'project') === 0
+            && $module['enabled'];
+    }
+
+    private function packageModuleInformation($modules)
+    {
         $results = array();
         foreach ($modules as $module) {
             $results[] = $this->getModuleInformation($module);

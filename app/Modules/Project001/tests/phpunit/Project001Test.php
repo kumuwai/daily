@@ -27,7 +27,7 @@ class Project001Test extends TestCase
     public function testProjectListAppearsInReverseOrder()
     {
         $crawler = new Crawler($this->call('GET','/')->getContent());
-        $text = $crawler->filter('#main-menu')->text();
+        $text = $crawler->filter('#project-menu')->text();
         $this->assertRegExp('/Project 2.*Project 1/s', $text);
     }
 
