@@ -9,6 +9,7 @@ return [
     'less' => ['caption'=>'less', 'url'=>'http://lesscss.org', 'file'=>'logo_less.png'],
     'bootstrap' => ['caption'=>'Bootstrap', 'url'=>'http://getbootstrap.com', 'file'=>'logo_bootstrap.svg'],
     'bower' => ['caption'=>'bower', 'url'=>'http://bower.io', 'file'=>'logo_bower.png'],
+    'vue' => ['caption'=>'Vue.js', 'url'=>'https://vuejs.org', 'file'=>'logo_vue.png'],
     
     // 'jquery' => ['caption'=>'jquery', 'url'=>'http://jquery.com', 'file'=>'logo_jquery.svg'],
     // 'jquery-ui' => ['caption'=>'jquery ui', 'url'=>'http://jqueryui.com', 'file'=>'logo_jqueryui.svg'],

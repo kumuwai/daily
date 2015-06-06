@@ -1,0 +1,8 @@
+{
+	"name": "Project003",
+	"slug": "project003",
+	"version": "1.0",
+	"description": "Using Vue.js",
+	"enabled": true,
+    "tools": ["vue","bower","gulp"]
+}

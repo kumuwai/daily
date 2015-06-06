@@ -12,6 +12,8 @@
     "angular": "*",
     "angular-resource": "*",
     "angular-route": "*",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "vue": "~0.11.10",
+    "highlight": "~7.0.1"
   }
 }
