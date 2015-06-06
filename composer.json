@@ -30,7 +30,10 @@
 		],
 		"psr-4": {
 			"Kumuwai\\Playground\\": "app/"
-		}
+		},
+        "files": [
+            "app/helpers.php"
+        ]
 	},
 	"autoload-dev": {
 		"classmap": [ 

@@ -23,6 +23,7 @@ class BaseServiceProvider extends ServiceProvider
         // services in the IoC container. If you wish, you may make additional
         // methods or service providers to keep the code more focused and granular.
         App::register('Kumuwai\Playground\Modules\Base\Providers\RouteServiceProvider');
+        App::register('Kumuwai\Playground\Modules\Base\Providers\AssetsServiceProvider');
 
         $this->app->bind('projects.base', function($app){
             return new Projects($app['modules'], new Tools);

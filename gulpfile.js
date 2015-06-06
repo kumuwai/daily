@@ -26,6 +26,8 @@ elixir(function(mix) {
     ], 'public/js/angular.js')
     .copy(bower_source + 'jquery/dist/*.*', 'public/js')
     .copy(bower_source + '/bootstrap/dist/js/*.*', 'public/js')
+    .copy(bower_source + '/vue/dist/*.js', 'public/js')
+    .copy(bower_source + '/highlight', 'public/vendor/highlight')
     ;
     // .scripts(['forum.js', 'threads.js'], 'public/js/forum.js');
 });

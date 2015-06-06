@@ -9,7 +9,7 @@
     </title>
 </head>
 @section('master-css')
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    {!! css('app') !!}
 @show
 @yield('css')
 <body>
@@ -30,8 +30,8 @@
 </div>
 
 @section('master-js')
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    {!! js('jquery') !!}
+    {!! js('bootstrap') !!}
 @show
 @yield('js')
 

@@ -1,0 +1,1 @@
+tail -f -n 200 storage/logs/laravel-`TZ=UTC date +%Y-%m-%d`.log

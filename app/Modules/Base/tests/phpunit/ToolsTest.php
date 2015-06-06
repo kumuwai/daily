@@ -1,5 +1,6 @@
 <?php namespace Kumuwai\Playground\Modules\Base\Domain;
 
+include_once 'functions.php';
 use PHPUnit_Framework_TestCase;
 
 
@@ -66,37 +67,4 @@ class ToolsTest extends PHPUnit_Framework_TestCase
 
 }
 
-function config($what) 
-{
-    return [
-        'laravel' => ['caption'=>'Laravel 5', 'url'=>'http://laravel.com', 'file'=>'logo_laravel.png'],
-        'tool1' => ['caption'=>'tool1','url'=>'#', 'file'=>'tool1.png'],
-    ];
-}
 
-function array_only($array, $keys)
-{
-    return array_intersect_key($array, array_flip((array) $keys));
-}
-
-function view($name, $with)
-{
-    return new TestViewStub($name, $with);
-}
-
-class TestViewStub 
-{
-    private $view;
-    private $item;
-
-    public function __construct($view, $item)
-    {
-        $this->item = $item;
-        $this->view = $view;
-    }
-
-    public function render()
-    {
-        return '<' . $this->view . '.' . $this->item['caption'] . '>';
-    }
-}
