@@ -146,7 +146,6 @@ return [
         'Kumuwai\Playground\Providers\ConfigServiceProvider',
         'Kumuwai\Playground\Providers\EventServiceProvider',
         'Kumuwai\Playground\Providers\RouteServiceProvider',
-
     ],
 
     /*
@@ -197,6 +196,7 @@ return [
 
         'Module'    => 'Caffeinated\Modules\Facades\Module',
 
+        'Assets'    => 'Kumuwai\Playground\Modules\Base\Facades\AssetsFacade',
     ],
 
 ];
