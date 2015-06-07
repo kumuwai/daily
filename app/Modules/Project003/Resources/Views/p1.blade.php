@@ -17,20 +17,7 @@
     </div><!-- /.container -->
 @stop
 
-@section('css')
-    {!! css('highlight') !!}
-
-    <style type="text/css">
-        pre {
-            margin-top: 20px;
-            width: 90%;
-            border-radius: 10px;
-        }
-        pre code {
-            border-radius: 10px;
-        }
-    </style>
-@stop
+@include('project003::_styles')
 
 @section('js')
     {!! js('vue') !!}

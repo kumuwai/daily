@@ -11,7 +11,13 @@ class Project003Controller extends UIController
 
     public function index()
     {
-        return view('project003::index');
+        $pages = [
+            '1' => '2-way binding between data and input',
+            '2' => 'Lists',
+            '3' => 'Event handling',
+        ];
+
+        return view('project003::index', compact('pages'));
     }
 
     public function show($page)

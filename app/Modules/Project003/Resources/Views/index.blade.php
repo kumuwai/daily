@@ -8,12 +8,14 @@
 
     <div id="project-menu">
 
-        <div class="menu-item">
-            <div class="name"><a href="/project003/p1">Page 1</a></div> 
-            <div class="description">2-way binding between data and input</div>
-        </div>
-    
-    </div>
+        @foreach($pages as $key=>$value)
+            <div class="menu-item">
+                <div class="name"><a href="/project003/p{{$key}}">Page {{$key}}</a></div> 
+                <div class="description">{{$value}}</div>
+            </div>
+        @endforeach
+
+    </div><!-- #project-menu -->
 
 @stop
 
