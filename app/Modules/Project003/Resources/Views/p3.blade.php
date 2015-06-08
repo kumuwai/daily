@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>This is a test of some basic events.</p>
+    <p>This is a test of some basic events. Move over the input box or button to see the events that are fired. Click reset to reset the list.</p>
 @stop
 
 @section('content')
 
-    <div id="demo" class="container">
+    <div id="demo" class="container-fluid">
 
         <input id="input-box" type="text" v-on="
             blur: onBlur,

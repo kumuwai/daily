@@ -6,16 +6,16 @@
 
 @section('content')
 
-    <div id="demo" class="container">
+    <div id="demo" class="container-fluid">
 
-        <div class="col-xs-6">
+        <div class="col-sm-6">
             <h3>Using value:</h3>
             <ul>
                 <li v-repeat="names">@{{ $value }}</li>
             </ul>
         </div>
 
-        <div class="col-xs-6">
+        <div class="col-sm-6">
             <h3>Using defined variable:</h3>
             <ul>
                 <li v-repeat="name: names">@{{ name }}</li>
@@ -23,10 +23,19 @@
         </div>
 
         <h3>Add a new name:</h3>
-        <input type="text" placeholder="Add a new name" v-model="new" v-on="blur: addName">
+        <input type="text" 
+            placeholder="Add a new name" 
+            v-on="
+                blur: addName,
+                keypress: addName | key enter,
+            "
+            v-model="new" 
+        >
 
     </div><!-- /.container -->
 @stop
+
+@include('project003::_styles')
 
 @section('js')
     {!! js('vue') !!}
@@ -38,7 +47,7 @@
 
             data: {
 
-                names: [ 'Foo', 'Bar', 'Bazz', 'Buzz', 'Fizz', 'Bang' ],
+                names: [ 'Foo', 'Bar', 'Fizz', 'Buzz' ],
                 
             },
 
@@ -46,6 +55,7 @@
 
                 addName: function() {
                     this.names.push(this.new);
+                    this.new = '';
                 }
             }
 

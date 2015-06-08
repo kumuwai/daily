@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="demo" class="container">
+    <div id="demo" class="container-fluid">
 
             <input type="text" v-model="static" placeholder="static content">
 
