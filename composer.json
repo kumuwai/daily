@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*",
+		"laravel/framework": "5.1.*",
 		"caffeinated/modules": "~1.2",
 		"wikimedia/composer-merge-plugin": "~1.0",
 	    "kumuwai/data-transfer-object": "~0.0.4"
