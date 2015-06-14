@@ -25,6 +25,7 @@
     @include('base::shields')
 
     <div id="project-menu">
+        <h2>Projects</h2>
         @foreach($projects as $project)
             <div class="menu-item">
                 <div class="name"><a href="/{{$project->slug}}">{{$project->title}}</a></div> 

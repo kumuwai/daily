@@ -1,5 +1,9 @@
 <?php namespace Kumuwai\Playground\Http\Controllers;
 
+use Kumuwai\Playground\Http\Requests;
+use Kumuwai\Playground\Modules\Base\Domain\Tools;
+use Kumuwai\Playground\Modules\Base\Domain\Projects;
+
 class WelcomeController extends Controller 
 {
 
@@ -27,9 +31,15 @@ class WelcomeController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Projects $projectList, Tools $toolList)
     {
-        return view('welcome');
+        $projects = $projectList->get()
+            ->sortBy(function($project){
+                return $project->name;
+            }, SORT_REGULAR, true);
+        $tools = $toolList->all();
+
+        return view('index', compact('projects','tools'));
     }
 
 }

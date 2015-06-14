@@ -20,18 +20,4 @@ class Project001Cest
         $I->seeLink('codeception');
     }
 
-    public function make_sure_index_page_has_list_of_projects(AcceptanceTester $I)
-    {
-        $I->amOnPage('/');
-        $I->seeLink('Project 1','project001');
-    }
-
-    public function make_sure_project1_page_works(AcceptanceTester $I)
-    {
-        $I->amOnPage('/project001');
-        $I->seeResponseCodeIs(200);
-        $I->see('Aloha', 'h1');
-        $I->seeLink('Project 1','project001');
-    }
-
 }

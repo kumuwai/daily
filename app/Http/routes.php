@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', '\Kumuwai\Playground\Modules\Project001\Http\Controllers\Project001Controller@index');
+Route::get('/', 'WelcomeController@index');
+// Route::get('/', '\Kumuwai\Playground\Modules\Project001\Http\Controllers\Project001Controller@index');
 
 
 // Route::get('home', 'HomeController@index');
