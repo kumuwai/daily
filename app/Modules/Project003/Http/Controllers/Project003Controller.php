@@ -16,6 +16,7 @@ class Project003Controller extends UIController
             '2' => 'Lists',
             '3' => 'Event handling',
             '4' => 'Sorting and filtering',
+            '5' => 'Basic forms with Laravel',
         ];
 
         return view('project003::index', compact('pages'));

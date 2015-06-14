@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>This is a basic 2-way binding between data and an input. It will automatically reset the text block every 5 seconds.</p>
+    <p>Part 1: This is a basic 2-way binding between data and an input. It will automatically reset the text block every 5 seconds.</p>
 @stop
 
 @section('content')

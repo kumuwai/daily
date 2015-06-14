@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>This is a basic list. We can also add items to the list.</p>
+    <p>Part 2: This is a basic list. We can also add items to the list.</p>
 @stop
 
 @section('content')
