@@ -24,7 +24,7 @@
 
     @include('base::shields')
 
-    <div id="project-menu">
+    <div id="project-menu" class="project-menu">
         <h2>Projects</h2>
         @foreach($projects as $project)
             <div class="menu-item">
@@ -34,6 +34,14 @@
         @endforeach
     </div>
 
+    <div id="other-menu" class="project-menu">
+        <h2>Other Stuff</h2>
+        <div class="menu-item">
+            <div class="name"><a href="/history">History</a></div> 
+            <div class="description">Visualization History</div>
+        </div>
+    </div>
+    
 </div><!-- .wrapper -->
 
 </body>
