@@ -6276,18 +6276,18 @@ a:hover {
   border-radius: 0 0 10px 10px;
   box-shadow: 3px 3px 10px #999999;
 }
-#project-menu {
+.project-menu {
   display: table;
 }
-#project-menu .menu-item {
+.project-menu .menu-item {
   display: table-row;
 }
-#project-menu .name,
-#project-menu .description {
+.project-menu .name,
+.project-menu .description {
   display: table-cell;
   padding-right: 10px;
 }
-#project-menu .description img {
+.project-menu .description img {
   max-height: 16px;
 }
 .header {

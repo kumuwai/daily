@@ -7,15 +7,15 @@ class Project002Cest
     {
         $I->amOnPage('/');
         $text = $I->grabTextFrom('#project-menu');
-        $I->seeRegularExpression('/Project 2.*Project 1/s', $text);
+        $I->seeRegularExpression('/Project 3.*Project 2/s', $text);
     }
 
     public function show_tools(AcceptanceTester $I)
     {
-        $I->amOnPage('/tools/laravel');
+        $I->amOnPage('/tools/bootstrap');
         $I->seeResponseCodeIs(200);
-        $I->seeLink('Laravel', 'http://laravel.com');
-        $I->seeLink('Project 1', '/project001');
+        $I->seeLink('Bootstrap', 'http://getbootstrap.com');
+        $I->seeLink('Project 2', '/project002');
     }
 
     public function make_sure_project002_page_exists(AcceptanceTester $I)

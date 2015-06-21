@@ -12,6 +12,7 @@ class Kernel extends ConsoleKernel {
      */
     protected $commands = [
         'Kumuwai\Playground\Console\Commands\Inspire',
+        'Kumuwai\Playground\Console\Commands\GenerateHistoryVideo',
     ];
 
     /**

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# This uses gource to show a visualization of the project
+
+if [ $1 ] 
+then 
+
+xvfb-run -a -s "-screen 0 1280x720x24" \
+    gource \
+    -s 0.5 \
+    -p 0.01 \
+    -1280x720 \
+    --auto-skip-seconds 1 \
+    --multi-sampling \
+    --stop-at-end \
+    --highlight-users \
+    --caption-duration 1 \
+    --max-files 0 \
+    --file-idle-time 0 \
+    --hide mouse,progress,filenames,dirnames \
+    --font-size 20 \
+    --title "Joel's Playground" \
+    --output-framerate 30 \
+    --output-ppm-stream - \
+| avconv \
+    -y \
+    -r 30 \
+    -f image2pipe \
+    -vcodec ppm \
+    -i - \
+    -i ./resources/assets/video/cherry_blossom.ogg \
+    -shortest \
+    $1
+
+else  
+
+gource \
+    -s 0.5 \
+    -p 0.01 \
+    --auto-skip-seconds 1 \
+    --multi-sampling \
+    --stop-at-end \
+    --highlight-users \
+    --caption-duration 1 \
+    --max-files 0 \
+    --file-idle-time 0 \
+    --hide mouse,progress,filenames,dirnames \
+    --font-size 20 \
+    --title "Joel's Playground" 
+
+fi

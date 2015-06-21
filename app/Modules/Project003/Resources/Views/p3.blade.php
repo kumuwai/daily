@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>This is a test of some basic events. Move over the input box or button to see the events that are fired. Click reset to reset the list.</p>
+    <p>Part 3: This shows handling for some basic events. Move over the input box or button to see the events that are fired. Click reset to reset the list.</p>
 @stop
 
 @section('content')

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>This is a basic list with sorting and filtering</p>
+    <p>Part 4: This shows a basic list with sorting and filtering.</p>
 @stop
 
 @section('content')
