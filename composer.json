@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.1.*",
-		"caffeinated/modules": "~1.2",
+		"caffeinated/modules": "~2.0",
 		"wikimedia/composer-merge-plugin": "~1.0",
 	    "kumuwai/data-transfer-object": "~0.0.4"
 	},
