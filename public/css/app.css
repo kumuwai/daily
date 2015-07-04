@@ -6362,6 +6362,12 @@ form ul {
 .menu-item figure img {
   max-height: 16px;
 }
+table.compact {
+  margin: 10px;
+}
+table.compact td {
+  padding: 10px 10px 0px 0px;
+}
 body,
 label,
 .checkbox label {

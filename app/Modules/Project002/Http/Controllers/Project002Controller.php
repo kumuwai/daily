@@ -12,6 +12,7 @@ class Project002Controller extends UIController
     public function index()
     {
         $projects = app()->make('projects.base')->get();
+        
         return view('project002::index')
             ->with(compact('projects'));
     }
