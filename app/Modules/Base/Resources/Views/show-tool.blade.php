@@ -28,7 +28,7 @@
             </a>
         </h1>
         <h3>These projects demonstrate {{$tool[$id]['caption']}}:</h3>
-        <div id="project-menu">
+        <div id="project-menu" class="project-menu">
         @foreach($projects as $project)
             <div class="menu-item">
                 <div class="name"><a href="/{{$project->slug}}">{{$project->title}}</a></div> 

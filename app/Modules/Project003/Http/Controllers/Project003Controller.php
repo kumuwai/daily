@@ -9,9 +9,7 @@ class Project003Controller extends UIController
 {
     protected $project = 'project003';
 
-    public function index()
-    {
-        $pages = [
+    protected $pages = [
             '1' => '2-way binding between data and input',
             '2' => 'Lists',
             '3' => 'Event handling',
@@ -19,6 +17,10 @@ class Project003Controller extends UIController
             '5' => 'Basic forms with Laravel',
         ];
 
+    public function index()
+    {
+        $pages = $this->pages;
+        
         return view('project003::index', compact('pages'));
     }
 

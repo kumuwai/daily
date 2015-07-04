@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <div id="project-menu">
+    <div class="project-menu">
 
         @foreach($pages as $key=>$value)
             <div class="menu-item">
