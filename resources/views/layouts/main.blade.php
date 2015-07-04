@@ -24,7 +24,7 @@
     
     @yield('notes')
 
-    @include('base::shields')
+    <hr>
 
     @yield('content')
 </div>

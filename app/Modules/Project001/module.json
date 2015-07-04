@@ -1,0 +1,8 @@
+{
+	"name": "Project001",
+	"slug": "project001",
+	"version": "1.0",
+	"description": "Simple Laravel CRUD application",
+    "tools": ["laravel","bootstrap"],
+    "enabled": true
+}
