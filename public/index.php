@@ -18,6 +18,8 @@
 |
 */
 
+try{
+
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*
@@ -55,3 +57,7 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+
+} catch (\Exception $e) {
+    dd($e);
+}
