@@ -16,5 +16,5 @@ return [
     // 'jquery-ui' => ['caption'=>'jquery ui', 'url'=>'http://jqueryui.com', 'file'=>'logo_jqueryui.svg'],
     // 'angularjs' => ['caption'=>'angularjs', 'url'=>'https://angularjs.org', 'file'=>'logo_angular.svg'],
     // 'stripe' => ['caption'=>'stripe', 'url'=>'https://stripe.com', 'file'=>'logo_stripe.png'],
-
+    // 'css' => ['caption'=>'CSS', 'url'=>'http://css', 'file'=>''],
 ];

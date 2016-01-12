@@ -1,0 +1,8 @@
+{
+	"name": "Project004",
+	"slug": "project004",
+	"version": "1.0",
+	"description": "CSS Tests",
+	"enabled": true,
+	"tools": ["css"]
+}
