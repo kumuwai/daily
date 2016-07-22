@@ -21,4 +21,10 @@ This is a playground for me to spend a little time to experiment with web develo
 * <a href="http://lesscss.org">less</a>
 * <a href="https://stripe.com">stripe</a>
 
+To install:
+
+    clone the repository
+    npm install
+    bower install
+    gulp
 

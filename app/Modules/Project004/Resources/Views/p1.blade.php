@@ -48,6 +48,14 @@
             </ul>
         </div>
 
+        <h4>Fixed first column, flex second</h4>
+        <div class="item_flex entry">
+            <ul>
+                <li style="width:120px; flex:0 0 auto">item 1</li>
+                <li style="width:100%; flex:0 1 auto">item 2</li>
+            </ul>
+        </div>
+
         <h4>Wrapping items:</h4>
         <div class="item_wrap entry">
             <div>item 1</div>
