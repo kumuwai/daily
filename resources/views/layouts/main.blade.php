@@ -12,6 +12,7 @@
     {!! css('app') !!}
 @show
 @yield('css')
+@yield('css2')
 <body>
 
 @include('base::navbar')
