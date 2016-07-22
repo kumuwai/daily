@@ -7,7 +7,7 @@ return [
         'highlight' => '/vendor/highlight/build/highlight.pack.js',
         'jquery' => '/js/jquery.min.js',
         'jplayer' => '/vendor/jplayer/jplayer/jquery.jplayer.min.js',
-        'vue' => 'js/vue.min.js',
+        'vue' => 'js/vue.js',
     ],
 
     'css' => [

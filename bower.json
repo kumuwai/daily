@@ -13,7 +13,7 @@
     "angular-resource": "*",
     "angular-route": "*",
     "bootstrap": "~3.3.4",
-    "vue": "~0.11.10",
+    "vue": "*",
     "highlight": "~7.0.1",
     "jplayer": "~2.9.2"
   }
