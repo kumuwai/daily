@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>Part 6: This shows a basic component</p>
+    <p>Part 5: This shows a basic component</p>
 @stop
 
 @section('content')

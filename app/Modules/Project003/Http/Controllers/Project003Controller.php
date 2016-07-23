@@ -16,6 +16,7 @@ class Project003Controller extends UIController
             '4' => 'Sorting and filtering',
             '5' => 'Basic Component (counters)',
             '6' => 'Price List Component',
+            '7' => 'Task Component',
             // '5' => 'Basic forms with Laravel',
         ];
 
