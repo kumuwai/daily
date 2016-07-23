@@ -8,49 +8,49 @@
 
     <div id="demo" class="container-fluid">
 
-        <input id="input-box" type="text" v-on="
-            blur: onBlur,
-            focus: onFocus, 
+        <input id="input-box" type="text" 
+            v-on:blur="onBlur"
+            v-on:focus="onFocus", 
+            v-on:keydown="onKeyDown",
+            v-on:keyup="onKeyUp",
+            v-on:keypress="onKeyPress",
 
-            keydown: onKeyDown,
-            keyup: onKeyUp,
-            keypress: onKeyPress,
+            v-on:change="onChange",
+            v-on:select="onSelect",
+            
+            v-on:click="onClick",
+            v-on:dblclick="onDblClick", 
+            v-on:mousedown="onMouseDown",
+            v-on:mousemove="onMouseMove",
+            v-on:mouseout="onMouseOut",
+            v-on:mouseover="onMouseOver",
+            v-on:mouseup="onMouseUp"
+        >
 
-            change: onChange,
-            select: onSelect,
+        <button id="button"
+            v-on:blur="onBlur"
+            v-on:focus="onFocus", 
+            v-on:keydown="onKeyDown",
+            v-on:keyup="onKeyUp",
+            v-on:keypress="onKeyPress",
 
-            click: onClick,
-            dblclick: onDblClick, 
-            mousedown: onMouseDown,
-            mousemove: onMouseMove,
-            mouseout: onMouseOut,
-            mouseover: onMouseOver,
-            mouseup: onMouseUp
-        ">
+            v-on:change="onChange",
+            v-on:select="onSelect",
+            
+            v-on:click="onClick",
+            v-on:dblclick="onDblClick", 
+            v-on:mousedown="onMouseDown",
+            v-on:mousemove="onMouseMove",
+            v-on:mouseout="onMouseOut",
+            v-on:mouseover="onMouseOver",
+            v-on:mouseup="onMouseUp"
+        >
+            Button
+        </button>
 
-        <button id="button" v-on="
-            blur: onBlur,
-            focus: onFocus, 
-
-            keydown: onKeyDown,
-            keyup: onKeyUp,
-            keypress: onKeyPress,
-
-            change: onChange,
-            select: onSelect,
-
-            click: onClick,
-            dblclick: onDblClick, 
-            mousedown: onMouseDown,
-            mousemove: onMouseMove,
-            mouseout: onMouseOut,
-            mouseover: onMouseOver,
-            mouseup: onMouseUp
-        ">Button</button>
-
-        <button id="reset" v-on="
-            click: doReset
-        ">Reset</button>
+        <button id="reset" v-on:click="doReset">
+            Reset
+        </button>
 
 
     <pre><code>@{{ $data | json }}</code></pre>

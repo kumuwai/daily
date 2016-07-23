@@ -8,27 +8,18 @@
 
     <div id="demo" class="container-fluid">
 
-        <div class="col-sm-6">
-            <h3>Using value:</h3>
+        <div class="col-sm-12">
+            <h3>List contents</h3>
             <ul>
-                <li v-repeat="names">@{{ $value }}</li>
-            </ul>
-        </div>
-
-        <div class="col-sm-6">
-            <h3>Using defined variable:</h3>
-            <ul>
-                <li v-repeat="name: names">@{{ name }}</li>
+                <li v-for="name in names">@{{ name }}</li>
             </ul>
         </div>
 
         <h3>Add a new name:</h3>
         <input type="text" 
             placeholder="Add a new name" 
-            v-on="
-                blur: addName,
-                keypress: addName | key enter,
-            "
+            v-on:keyup.enter="addName"
+            v-on:blur="addName"
             v-model="new" 
         >
 
@@ -47,6 +38,7 @@
 
             data: {
 
+                new: '',
                 names: [ 'Foo', 'Bar', 'Fizz', 'Buzz' ],
                 
             },

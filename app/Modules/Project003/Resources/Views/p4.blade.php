@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-6">
             <select class="form-control" v-model="forGender">
-                <option v-repeat="gender: genders" value="@{{gender}}">
+                <option v-for="gender in genders" value="@{{gender}}">
                     @{{ gender | capitalize}}
                 </option>
             </select>
@@ -26,17 +26,17 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th v-repeat="column: columns">
-                        <a href="#" v-on="click: sortBy(column)">
+                    <th v-for="column in columns">
+                        <a href="#" v-on:click="sortBy(column)">
                             @{{ column | capitalize }}
                         </a>
                     </th>
                 </tr>
             </thead>
-            <tr v-repeat="people | filterByGender | filterByValue | orderBy sortKey sortDesc">
-                <td>@{{name}}</td>
-                <td>@{{gender}}</td>
-                <td>@{{age}}</td>
+            <tr v-for="person in people | filterByGender | filterByValue | orderBy sortKey sortDesc">
+                <td>@{{ person.name }}</td>
+                <td>@{{ person.gender }}</td>
+                <td>@{{ person.age }}</td>
             </tr>
         </table>
 
@@ -44,11 +44,11 @@
             <input type="text" class="form-control" placeholder="Name" v-model="new_person.name">
             <input type="text" class="form-control" placeholder="Age" v-model="new_person.age">
             <select class="form-control" v-model="new_person.gender">
-                <option v-repeat="gender: genders | except all " value="@{{gender}}">
+                <option v-for="gender in genders | except all " value="@{{gender}}">
                     @{{ gender | capitalize}}
                 </option>
             </select>
-            <button class="btn btn-primary" v-on="click: addPerson">Add</button>
+            <button class="btn btn-primary" v-on:click="addPerson">Add</button>
         </div>
 
         <div class="col-sm-8">
