@@ -7,7 +7,8 @@
 	"require": {
 		"laravel/framework": "5.1.*",
 		"caffeinated/modules": "~2.0",
-	    "kumuwai/data-transfer-object": "~0.0.4"
+	    "kumuwai/data-transfer-object": "~0.0.4",
+        "spatie/laravel-fractal": "^1.9"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
@@ -63,6 +64,6 @@
 	"config": {
 		"minimum-stability": "dev",
 		"preferred-install": "dist",
-		"secure-http": false
+		"secure-http": true
 	}
 }
