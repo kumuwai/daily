@@ -12,6 +12,8 @@
 */
 
 Route::group(['prefix' => 'project003'], function() {
+    Route::resource('/api/tasks', 'TaskController',
+        ['only' => ['index','store','show','update','destroy']]);
     Route::get('/', 'Project003Controller@index');
     Route::get('/{page}', 'Project003Controller@show');
 });

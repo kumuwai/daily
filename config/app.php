@@ -139,6 +139,7 @@ return [
 
         // Third-party service providers
         'Caffeinated\Modules\ModulesServiceProvider',
+        Spatie\Fractal\FractalServiceProvider::class,
 
         // Application Service Providers         
         'Kumuwai\Playground\Providers\AppServiceProvider',
