@@ -19,6 +19,7 @@ class Project003Controller extends UIController
             '7' => 'Task Component',
             '8' => 'AJAX Tasks (using Laravel data)',
             '9' => 'Alert boxes',
+            '10' => 'Alert boxes (using Browserify)',
             // '5' => 'Basic forms with Laravel',
         ];
 

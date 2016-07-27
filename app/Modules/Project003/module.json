@@ -4,5 +4,5 @@
 	"version": "1.0",
 	"description": "Vue.js",
 	"enabled": true,
-    "tools": ["vue","laravel","bower","gulp"]
+    "tools": ["vue","laravel","bower","gulp","browserify"]
 }
