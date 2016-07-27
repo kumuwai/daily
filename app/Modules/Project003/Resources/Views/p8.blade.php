@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>Part 8: This shows a task component with an ajax back-end served from Laravel.</p>
+    <p>Part 8: This shows a task component with an ajax back-end served from Laravel (based on <a href="https://laracasts.com/series/learning-vue-step-by-step">Laracasts: Learning Vue Step by Step, Lesson 10</a>).</p>
 @stop
 
 @section('content')

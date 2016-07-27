@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>Part 6: This shows a price-list component</p>
+    <p>Part 6: This shows a price-list component (based on <a href="https://laracasts.com/series/learning-vue-step-by-step">Laracasts: Learning Vue Step by Step, Lesson 6</a>)</p>
 @stop
 
 @section('content')

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('notes')
-    <p>Part 7: This shows a task component</p>
+    <p>Part 7: This shows a task component (based on <a href="https://laracasts.com/series/learning-vue-step-by-step">Laracasts: Learning Vue Step by Step, Lesson 8</a>)</p>
 @stop
 
 @section('content')
