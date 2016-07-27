@@ -3,3 +3,5 @@
 .env
 
 tests/codeception/_output/*
+
+.DS_Store

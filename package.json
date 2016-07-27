@@ -4,8 +4,11 @@
     "gulp": "^3.8.8"
   },
   "dependencies": {
-    "laravel-elixir": "^4.0.0",
     "bootstrap-sass": "^3.0.0",
-    "gulp-notify": "^2.2.0"
+    "browserify": "^13.1.0",
+    "gulp-notify": "^2.2.0",
+    "laravel-elixir": "^4.0.0",
+    "laravel-elixir-vueify": "^1.0.3",
+    "babelify": "^7.3.0" 
   }
 }
