@@ -18,6 +18,7 @@ class Project003Controller extends UIController
             '6' => 'Price List Component',
             '7' => 'Task Component',
             '8' => 'AJAX Tasks (using Laravel data)',
+            '9' => 'Alert boxes',
             // '5' => 'Basic forms with Laravel',
         ];
 
