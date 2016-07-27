@@ -17,6 +17,7 @@ elixir(function(mix) {
     .copy(bower_source + 'jquery/dist/*.*', 'public/js')
     .copy(bower_source + '/bootstrap/dist/js/*.*', 'public/js')
     .copy(bower_source + '/vue/dist/*.js', 'public/js')
+    .copy(bower_source + '/vue-resource/dist/*.js', 'public/js')
     .copy(bower_source + '/highlight', 'public/vendor/highlight')
     .copy(bower_source + '/jplayer/dist', 'public/vendor/jplayer')
     ;
