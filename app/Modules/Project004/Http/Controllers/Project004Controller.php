@@ -11,6 +11,7 @@ class Project004Controller extends UIController
 
     protected $pages = [
             '1' => 'Flexboxes',
+            '2' => 'Animate.css',
         ];
 
     public function index()

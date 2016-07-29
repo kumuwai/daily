@@ -20,6 +20,9 @@ elixir(function(mix) {
     .copy(bower_source + '/vue-resource/dist/*.js', 'public/js')
     .copy(bower_source + '/highlight', 'public/vendor/highlight')
     .copy(bower_source + '/jplayer/dist', 'public/vendor/jplayer')
+
+    .copy(bower_source + '/animate.css/*.css', 'public/css')
+    .copy(bower_source + '/bootstrap/dist/css/*.*', 'public/css')
     ;
     // .scripts(['forum.js', 'threads.js'], 'public/js/forum.js');
 });
